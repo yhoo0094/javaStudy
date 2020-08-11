@@ -1,0 +1,87 @@
+jdk 1.8 download 검색 -> 젤 위에 페이지
+jdk-8u261-windows-x64.exe 다운로드
+notepad++ 다운로드
+jdk-8u261-windows-x64.exe 실행 -> next -> next -> 다음 -> next stages -> Java SE
+API 북마크
+
+[환경변수 설정하기]
+C:\Program Files\Java\jdk1.8.0_261\bin
+내PC -> 속성 -> 고급 -> 환경변수 -> 시스템변수 -> path -> 편집 -> 복붙 ->
+명령프롬프트 -> javac -version
+
+[git간편 안내서]
+https://rogerdudler.github.io/git-guide/index.ko.html
+
+노트패드에 13페이지 자료 입력 
+-> C:\javaSource에 저장 
+-> 컴파일러에 javac Hello.java 입력 (컴파일) 
+-> cd ../..으로 C:로 이동
+-> java Hello 입력(컴파일된 명령어 실행)
+
+[github가입]
+https://github.com/
+[github공간 만들기]
+https://github.com/yhoo0094/javaStudy
+[github다운로드]
+https://git-scm.com/downloads -> window용 다운로드 -> 예 ->
+next 7번 -> use windows' default console window -> 계속 next, install -> chrome으로 실행
+
+[명령프롬프트]
+새창 -> git -> cd ../.. -> cd javaSource
+-> git init => C:\javaSource에 .git폴더 생성됨
+-> git add Hello.java
+
+[사이트의 안내 command line]
+echo "# javaStudy" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/yhoo0094/javaStudy.git
+git push -u origin master
+
+git remote add origin https://github.com/yhoo0094/javaStudy.git
+git push -u origin master
+
+[실제 명령 프롬프트 입력 값]
+C:\javaSource>git commit -m "first com"
+C:\javaSource>git config --global user.email "yhoo112@naver.com"
+C:\javaSource>git config --global user.name "Kim Sang Min"
+C:\javaSource>git commit -m "first commit"
+
+C:\javaSource>git remote add origin https://github.com/yhoo0094/javaStudy.git
+C:\javaSource>git push -u origin master
+
+########################집에서################################
+javaSource 파일 생성
+-> 명령 프롬프트 실행
+-> d:
+-> cd javaSource
+-> git init => git을 초기화하고 .git 폴더 생성
+-> git remote add origin https://github.com/yhoo0094/javaStudy.git
+-> git pull origin master
+-> dir하면 Hello java파일이 생겨야 함
+
+*오류나면 .git 파일 지우고 git init부터 다시 실행*
+############################################################
+변경 사항 올리기
+git add *
+git commit -m "커밋이름"
+git push origin master
+
+변경 사항 다운받기
+c:
+git pull origin master
+
+[VariableExample]
+C:\javaSource에 VariableExample 노트패드 생성 -> 값 입력
+git add VariableExample.java
+git commit -m "second commit"
+git push origin master
+d: => 집이라고 생각
+git pull origin master
+
+[컴파일하기]
+C:\javaSource>javac VariableExample.java
+C:\javaSource>java VariableExample
+
+
